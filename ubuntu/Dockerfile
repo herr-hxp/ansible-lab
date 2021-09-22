@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-RUN apt update \
+RUN apt-get update \
     && apt-get install software-properties-common -y \
     && apt-get install openssh-server -y \
     && apt-get install sudo \

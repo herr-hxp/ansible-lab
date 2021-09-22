@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
-RUN apt update \
-    && apt install software-properties-common -y \
+RUN apt-get update \
+    && apt-get install software-properties-common -y \
     && apt-get install -y python3-pip python3-dev \
     && apt-get -y install sudo \
     && cd /usr/local/bin \
