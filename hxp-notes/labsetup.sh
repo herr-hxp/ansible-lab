@@ -1,4 +1,4 @@
-Run this in the folder where you want to clone the repo
+# Run this in the folder where you want to clone the repo
 
 ### Lab
 ## System Overview
