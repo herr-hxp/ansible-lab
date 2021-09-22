@@ -1,8 +1,8 @@
 FROM ubuntu:18.04
 RUN apt update \
-    && apt install software-properties-common -y \
-    && apt install openssh-server -y \
-    && apt install sudo \
+    && apt-get install software-properties-common -y \
+    && apt-get install openssh-server -y \
+    && apt-get install sudo \
     && apt-get install -y python3-pip python3-dev \
     && cd /usr/local/bin \
     && ln -s /usr/bin/python3 python \
