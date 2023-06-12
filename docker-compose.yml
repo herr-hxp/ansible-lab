@@ -23,7 +23,7 @@ services:
       privileged: true
       volumes:
       - ${UBUNTU_A_SSH}:/home/ansible/.ssh
-      - ${SHARED_FOLDER}/shared:/shared
+      - ${SHARED_FOLDER}:/shared
       networks:
         labnet.io:
             ipv4_address: 10.10.0.3 
@@ -38,7 +38,7 @@ services:
       privileged: true
       volumes:
       - ${UBUNTU_B_SSH}:/home/ansible/.ssh
-      - ${SHARED_FOLDER}/shared:/shared
+      - ${SHARED_FOLDER}:/shared
       networks:
         labnet.io:
             ipv4_address: 10.10.0.4 
@@ -53,7 +53,7 @@ services:
       privileged: true
       volumes:
       - ${UBUNTU_C_SSH}:/home/ansible/.ssh
-      - ${SHARED_FOLDER}/shared:/shared
+      - ${SHARED_FOLDER}:/shared
       networks:
         labnet.io:
             ipv4_address: 10.10.0.5 
@@ -68,7 +68,7 @@ services:
       privileged: true
       volumes:
       - ${UBUNTU_D_SSH}:/home/ansible/.ssh
-      - ${SHARED_FOLDER}/shared:/shared
+      - ${SHARED_FOLDER}:/shared
       networks:
         labnet.io:
             ipv4_address: 10.10.0.6 
